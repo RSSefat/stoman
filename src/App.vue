@@ -1,0 +1,58 @@
+<script>
+ export default {
+     data () {
+         return{
+             theme: false,
+             showMenu: false
+         }
+     },
+     methods: {
+         changeTheme (){
+             this.theme = !this.theme
+         },
+         toggleMenu(){
+             this.showMenu = !this.showMenu
+         }
+    
+     }
+ }
+</script>
+
+<template>
+<div :class="{dark: theme}" >
+    <div class="grid bg-white dark:bg-black text-black dark:text-white transition duration-500 py-4">
+<div class="grid grid-flow-col mx-4 justify-between">
+<div class="grid">Hello World</div>
+<div>
+ <span class="grid justify-start items-center h-6 w-12 bg-gradient-to-r from-gray-500   relative rounded-full dark:from-gray-50 dark:to-gray-500 transition duration-700 " @click="changeTheme">
+      <span class=" grid h-5/6 w-2/6 mx-1 bg-gray-50 dark:bg-gray-500 absolute rounded-full dark:translate-x-[25px]  transition duration-500 "></span>
+    </span>
+    </div>
+    
+    <div class="flex flex-col h-36 w-36 bg-slate-500 items-center fixed my-10 ml-11 justify-center " v-if="showMenu" >
+ <router-link to="/"> home</router-link>
+ <router-link to="/about"> about</router-link>
+</div>
+
+
+<div class="sm:flex space-x-3  hidden" >
+ <router-link to="/"> home</router-link>
+ <router-link to="/about"> about</router-link>
+</div>
+
+
+
+<button @click="toggleMenu" class="flex sm:hidden w-11 justify-center " >
+  <span v-if="!showMenu">...</span>
+  <span v-if="showMenu">x</span>
+</button>
+</div>
+
+ <router-view/>
+ </div> 
+ 
+  </div>
+ 
+</template>
+<style>
+</style>
