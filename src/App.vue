@@ -29,11 +29,14 @@
     </span>
     </div>
     
-    <div @click="toggleMenu" class="flex flex-col  w-[72vw] ml-10 space-y-5 dark:text-black rounded-xl shadow-sm  backdrop-opacity-25 backdrop-invert bg-white/30 items-start p-4 px-10 text-lg fixed my-10  justify-center " v-if="showMenu" >
+   
+    <div @click="toggleMenu" class="flex flex-col  w-[72vw]  ml-10 space-y-5 dark:text-black rounded-xl shadow-sm  backdrop-opacity-25 backdrop-invert bg-white/30 items-start p-4 px-10 text-lg fixed my-10  justify-center " v-if="showMenu" >
+ 
  <router-link class=" menu" to="/"> home</router-link>
  <router-link class="menu" to="/about"> about</router-link>
  
 </div>
+
 
 
 
