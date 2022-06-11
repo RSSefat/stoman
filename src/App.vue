@@ -29,10 +29,12 @@
     </span>
     </div>
     
-    <div class="flex flex-col h-36 w-36 bg-slate-500 items-center fixed my-10 ml-11 justify-center " v-if="showMenu" >
- <router-link to="/"> home</router-link>
- <router-link to="/about"> about</router-link>
+    <div @click="toggleMenu" class="flex flex-col  w-[82vw] ml-10 space-y-5 dark:text-black rounded-xl shadow-sm  backdrop-opacity-25 backdrop-invert bg-white/30 items-start p-4 px-10 text-lg fixed my-10  justify-center " v-if="showMenu" >
+ <router-link class=" menu" to="/"> home</router-link>
+ <router-link class="menu" to="/about"> about</router-link>
+ 
 </div>
+
 
 
 <div class="sm:flex space-x-3  hidden" >
@@ -54,5 +56,20 @@
   </div>
  
 </template>
-<style>
+<style scoped>
+ .menu {
+    background-color: rgb(151, 198, 243) ;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    margin-top:4px;
+    margin-bottom:4px;
+    text-transform: uppercase;
+    opacity: 0.9;
+    
+ }
+
 </style>
