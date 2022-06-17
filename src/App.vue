@@ -34,7 +34,11 @@
  
  <router-link class=" menu" to="/"> home</router-link>
  <router-link class="menu" to="/about"> about</router-link>
- 
+ <button class="flex flex-row space-x-3 text-sm  font-semibold justify-center items-center -m-2 ">
+    
+    <span class=" flex h-10 justify-center items-center bg-blue-300 w-[70px] rounded-lg ">Sign in</span> <p></p> OR
+    <router-link  class=" flex h-10 justify-center items-center bg-blue-300 w-[150px] rounded-lg " to="/signup"> Create An Acount</router-link>
+ </button>
 </div>
 
 
@@ -43,6 +47,11 @@
 <div class="sm:flex space-x-3  hidden" >
  <router-link to="/"> home</router-link>
  <router-link to="/about"> about</router-link>
+ <button class="flex flex-row space-x-3 text-sm  font-semibold justify-center items-center -m-2 ">
+    
+    <span class=" flex h-10 justify-center items-center bg-blue-300 w-[70px] rounded-lg ">Sign in</span> <p></p> OR
+    <router-link  class=" flex h-10 justify-center items-center bg-blue-300 w-[150px] rounded-lg " to="/signup"> Create An Acount</router-link>
+ </button>
 </div>
 
 
