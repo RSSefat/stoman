@@ -39,7 +39,7 @@
  <button class="flex flex-row space-x-3 text-sm  font-semibold justify-center items-center -m-2 ">
     
    <router-link  class=" flex h-10 justify-center items-center bg-blue-300 w-[70px] rounded-lg " to="/signin"> Sign in</router-link>   <p></p> OR
-    <router-link  class=" flex h-10 justify-center items-center bg-blue-300 w-[150px] rounded-lg " to=""> Create An Acount</router-link>
+    <router-link  class=" flex h-10 justify-center items-center bg-blue-300 w-[150px] rounded-lg " to="/signup"> Create An Acount</router-link>
  </button>
 </div>
 
