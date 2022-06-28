@@ -19,9 +19,10 @@
 </script>
 
 <template>
-<div :class="{dark: theme}" >
+<div :class="{dark: theme}" class="" >
+    <div class="grid h-screen dark:h-screen">
     <div class="grid bg-white dark:bg-black text-black dark:text-white transition duration-500 py-4">
-<div class="grid grid-flow-col mx-4 justify-between">
+<div class="grid grid-flow-col mx-4 h-16 justify-between">
 <div class="  p4 top-0 left-0">
     <img class=" h-16 w-16 " src="./assets/Kare Gradien.png" alt="/"/>
 </div>
@@ -32,7 +33,7 @@
     </div>
     
    
-    <div @click="toggleMenu" class="flex flex-col  w-[72vw] mt-16 ml-10 space-y-5 dark:text-black rounded-xl shadow-sm  backdrop-opacity-25 backdrop-invert bg-white/35 items-start p-4 px-10 text-lg fixed my-10  justify-center " v-if="showMenu" >
+    <div @click="toggleMenu" class="flex flex-col  w-[72vw] mt-16 ml-10 space-y-5 dark:text-black rounded-xl shadow-sm  backdrop-opacity-25 backdrop-invert bg-white/35 items-start p-4 px-10 text-lg fixed  justify-center " v-if="showMenu" >
  
  <router-link class=" menu" to="/"> home</router-link>
  <router-link class="menu" to="/about"> about</router-link>
@@ -66,6 +67,7 @@
 
  <router-view/>
  </div> 
+ </div>
  
   </div>
  

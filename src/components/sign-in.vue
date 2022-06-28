@@ -25,7 +25,7 @@
     }
 </script>
 <template>
-<form class="flex justify-center items-center flex-col m-5 p-2 space-y-10  " @submit.prevent="handleSubmit()">
+<form class="flex mb-[350px] justify-center items-center flex-col m-5 p-2 space-y-10 dark:bg-black transition duration-500 " @submit.prevent="handleSubmit()">
     <h1 class="flex  ">Welcome to tap</h1>
     <div class=" flex flex-col  space-y-10">
         <div class="flex flex-col ">

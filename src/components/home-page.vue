@@ -22,8 +22,8 @@
 </script>
 <template>
 
-<div  class="grid  justify-around py-10 h-full max-w-full touch-none ">
-<div class="grid grid-cols-3 gap-10 md:gap-52  md:transition-transform justify-around w-100% touch-none  ">
+<div  class="grid  justify-around py-10 h-full max-w-full mb-10 touch-none">
+<div class="grid grid-cols-3 gap-5 md:gap-52  md:transition-transform justify-around w-100%  ">
  <div v-for="tool in tools" :key="tools.id" :class="{fav: tool.isFav}" class="box grid  shadow-xl shadow-gray-500 dark:shadow-xl dark:shadow-blue-500" @click="toggleFav(tool)">
   <div class="flex box absulute flex-col h-100% w-100% px-1 select-none">
       <h1>{{tool.box}}</h1>   
@@ -38,6 +38,40 @@
 </div>
 
 
+
+
+
+
+
+<div  class="grid  justify-around py-10 h-full max-w-full mb-10 touch-none">
+<div class="grid grid-cols-3 gap-5 md:gap-52  md:transition-transform justify-around w-100%  ">
+ <div v-for="tool in tools" :key="tools.id" :class="{fav: tool.isFav}" class="box grid  shadow-xl shadow-gray-500 dark:shadow-xl dark:shadow-blue-500" @click="toggleFav(tool)">
+  <div class="flex box absulute flex-col h-100% w-100% px-1 select-none">
+      <h1>{{tool.box}}</h1>   
+      <p>{{tool.title}}</p>
+      <input class="flex w-[78px] rounded-lg " type="text" placeholder="Email">
+  
+      </div> 
+ </div>
+
+</div>
+
+</div>
+
+<div  class="grid  justify-around py-10 h-full max-w-full mb-10 touch-none">
+<div class="grid grid-cols-3 gap-5 md:gap-52  md:transition-transform justify-around w-100%  ">
+ <div v-for="tool in tools" :key="tools.id" :class="{fav: tool.isFav}" class="box grid  shadow-xl shadow-gray-500 dark:shadow-xl dark:shadow-blue-500" @click="toggleFav(tool)">
+  <div class="flex box absulute flex-col h-100% w-100% px-1 select-none">
+      <h1>{{tool.box}}</h1>   
+      <p>{{tool.title}}</p>
+      <input class="flex w-[78px] rounded-lg " type="text" placeholder="Email">
+  
+      </div> 
+ </div>
+
+</div>
+
+</div>
 </template>
 <style scoped>
  .box{ 

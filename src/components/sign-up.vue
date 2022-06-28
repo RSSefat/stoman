@@ -1,15 +1,15 @@
 <template>
-    <form class=" flex flex-col dark:bg-black dark:text-white transition duration-500 " @submit.prevent="handleSubmit()">
+    <form class=" flex top-0 mb-[300px] flex-col dark:bg-black  transition duration-500 " @submit.prevent="handleSubmit()">
         <label>Email:</label>
-        <input type="email" required v-model="email">
+        <input  class="outline-none flex dark:text-black" type="email" required v-model="email">
 
          <label>Password:</label>
-        <input type="password" required v-model="password">
+        <input class="outline-none dark:text-black" type="password" required v-model="password">
         <div v-if="passwordError" class="error" >{{passwordError}}</div>
 
 
         <label> Skills: </label>
-        <input type="text" v-model="tempSkill" @keypress="addSkill">
+        <input class="outline-none dark:text-black" type="text" v-model="tempSkill" @keypress="addSkill">
         <div v-for="skill in skills" :key='skill' class="pill">
             <span @click="deleteSkill(skill)">{{skill}}</span>
         </div>
@@ -60,8 +60,8 @@ export default {
                 this.tempSkill =''
             }
         },
-        deleteSkill(_skill){
-            this.skills = this.skills.filter((_i) => {
+        deleteSkill(skill){
+            this.skills = this.skills.filter((i) => {
               return  this.skill !== this.i
             })
         },
